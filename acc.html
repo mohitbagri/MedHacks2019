@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<!-- <form action="/action_page.php"> -->
+  <div class="container">
+    <h1>Account Details</h1>
+    <p>Please review/enter your account details.</p>
+    <hr>
+
+    <label for="Email ID"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" id="emailacc" required>
+
+	<label for="Password"><b>Password</b></label>
+    <input type="text" placeholder="Enter Password" id="pwdacc" required>
+
+    <label for="fnanme"<b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" id="fname">
+
+    <label for="lname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" id="lname" >
+
+<label for="Gender"><b>Gender</br></label>
+<input type="radio" name="gender" value="male"> Male<b>
+<input type="radio" name="gender" value="female"> Female<b>
+<br><br>
+    <label for="Age"><b>Age</b></label>
+    <input type="number" placeholder="Enter Age" id="Age" ></b><b><b></label>
+    <label for="Pincode"><b>Pincode</b></label>
+    <input type="number" placeholder="Enter Pincode" id="Pincode" > </br><br></br></label>
+
+<label for="Illness"><b>Please Check Applicable:</b></label>
+    <input type="checkbox" id="Cancer" value="Cancer">Cancer<b><b>
+
+    <input type="checkbox" id="AIDS" value="AIDS">AIDS<b><b>
+
+    <input type="checkbox" id="Mental" value="Mental Illness">Mental Illness<b><b>
+
+<input type="checkbox" id="Blind" value="Blind">Visually Impaired<b><b>
+<input type="checkbox" id="Deaf" value="Deaf">Hearing Impaired</b><b>
+<input type="checkbox" id="Dumb" value="Dumb">Speaking Impaired</br><br><br>
+
+    <button type="submit" class="registerbtn" id="submitbutton" onClick="inputdata()">Submit</button>
+
+    <button type="submit" class="registerbtn" id="rebtn" onClick="gotoindex()">Logout</button>
+
+  </div>
+ 
+<!-- </form> -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+
+
+
+<script src="ind.js">
+</script>
+
+</body>
+</html>
